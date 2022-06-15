@@ -1,0 +1,528 @@
+body {
+    margin: auto;
+    position: absolute;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*------------------------------------------------------------------------------------------------------INICIO DE HEADER - NAVEGADOR*/
+
+
+/* NAVEGADOR*/
+
+.inicio {
+    height: 100%;
+    position: relative;
+}
+
+.caja-top {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.329);
+    box-shadow: 0 0 8px rgb(255, 255, 255);
+    background-color: rgba(83, 90, 91, 0.008);
+}
+
+.contenedor {
+    width: 100%;
+    margin: auto;
+}
+
+.caja-top .contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 110px;
+}
+
+.menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 25px;
+}
+
+.menu ul li:not(:last-child) {
+    margin-right: 50px;
+}
+
+.menu ul li a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+.menu #sesion {
+    background-color: rgb(44, 193, 219);
+    padding: 7px 7px 10px 7px;
+    border-radius: 10px;
+}
+
+.menu ul li a:hover {
+    color: rgb(69, 121, 130);
+    text-decoration: underline 5px;
+}
+
+.menu #sesion:hover {
+    background-color: rgb(44, 193, 219);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.cont-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+
+/*------------------------------------------------------------------------------------------------------FIN DE HEADER - NAVEGADOR*/
+
+
+/*------------------------------------------------------------------------------------------------------INICIO DE GENERAL*/
+
+.general {
+    background-color: cadetblue;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ingreso {
+    background-color: burlywood;
+    width: 59%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.mostrador {
+    background-color: aqua;
+    width: 39%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------FIN DE GENERAL*/
+
+
+/*------------------------------------------------------------------------------------------------------INICIO DE INGRSO DE FORMULARIO*/
+
+
+/*----------------------------------TITULO PRINCIPAL*/
+
+.titulo-principal {
+    background-color: rgba(255, 228, 196, 0);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.titulo {
+    background-color: rgba(0, 255, 255, 0);
+    width: 59%;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+.tl-logo {
+    background-color: rgba(137, 43, 226, 0);
+    width: 39%;
+    text-align: center;
+    margin: auto;
+}
+
+.tl-logo img {
+    width: 75%;
+}
+
+
+/*----------------------------------TITULO PRINCIPAL*/
+
+.ingreso-datos {
+    background-color: rgba(127, 255, 212, 0);
+    margin: 5px;
+    padding: 5px;
+    width: 100%;
+}
+
+.formulario {
+    background-color: rgba(158, 174, 176, 0.567);
+    width: 98%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.tbl-form {
+    background-color: #cacdd200;
+    width: 100%;
+}
+
+.nombre-form {
+    width: 30%;
+    text-decoration: solid;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.campo-form {
+    width: 70%;
+    padding-bottom: 5px;
+}
+
+#fm-producto {
+    width: 90%;
+}
+
+#fm-serial {
+    width: 80%;
+}
+
+.tbl-form2-cont {
+    background-color: #7a7f8500;
+    width: 100%;
+}
+
+.nombre-form2 {
+    width: 25%;
+    text-decoration: solid;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.campo-form2 {
+    width: 75%;
+    padding-bottom: 5px;
+}
+
+#fm-mail {
+    width: 80%;
+}
+
+#fm-fecha {
+    width: 50%;
+}
+
+.tbl-foot {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.proveedor {
+    background-color: rgba(255, 127, 80, 0);
+    width: 70%;
+}
+
+.tbl-footer {
+    width: 100%;
+    background-color: #3167bd00;
+}
+
+.nombre-form-prov {
+    width: 30%;
+    text-decoration: solid;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.campo-form-prov {
+    width: 90%;
+    padding-bottom: 5px;
+}
+
+#fm-proveedor {
+    width: 80%;
+}
+
+.btn-form {
+    background-color: rgba(255, 255, 255, 0);
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+#fm-btn {
+    width: 90%;
+    height: 33px;
+    border-radius: 10px 1;
+}
+
+
+/*----------------------------------DATOS DE ESPECIFICACIONES*/
+
+.parametros {
+    background-color: rgba(255, 127, 80, 0);
+    width: 100%;
+    margin-top: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.especificaciones {
+    background-color: rgba(222, 184, 135, 0);
+    width: 59%;
+    box-shadow: 0 0 8px rgb(0, 0, 0);
+}
+
+.imagen {
+    background-color: rgba(0, 255, 255, 0);
+    width: 40%;
+}
+
+.tbl-form-especif {
+    background-color: #5682ca;
+    width: 100%;
+}
+
+.nombre-form-especif {
+    width: 50%;
+    text-decoration: solid;
+    padding-left: 10px;
+    padding-bottom: 5px;
+}
+
+.campo-form-especif {
+    width: 50%;
+    padding-bottom: 5px;
+}
+
+#pr-color,
+#pr-tamaño,
+#pr-bio {
+    width: 80%;
+}
+
+.tbl-form-especif-img {
+    width: 80%;
+    margin: auto;
+}
+
+.campo-form-especif-img {
+    background-color: rgba(250, 235, 215, 0);
+    width: 60%;
+}
+
+.nombre-form-especif-img {
+    width: 40%;
+    text-align: center;
+}
+
+#pr-img {
+    width: 80%;
+    padding-bottom: 25px;
+}
+
+
+/*------------------------------------------------------------------------------------------------------FIN DE INGRSO DE FORMULARIO*/
+
+
+/*------------------------------------------------------------------------------------------------------INICIO DE ADICIONAL - PROVEEDORES*/
+
+
+/*------------------------------------------------------------------------------------------------------FIN DE ADICIONAL - PROVEEDORES*/
+
+
+/*------------------------------------------------------------------------------------------------------INICIO DE ADICIONAL2 - SUSCRIPCIÓN*/
+
+
+/*------------------------------------------------------------------------------------------------------FIN DE ADICIONAL2 - SUSCRIPCIÓN*/
+
+
+/*------------------------------------------------------------------------------------------------------INICIO DE FOOTER*/
+
+.foot {
+    background: #111;
+    height: auto;
+    width: 100%;
+    color: #fff;
+    padding-bottom: 10px;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.footer-content p {
+    font-size: 100px;
+    font-style: italic;
+}
+
+.logo-foot {
+    width: 30%;
+    margin: 5px 0px 5px 20px;
+}
+
+.banner-foot {
+    width: 100%;
+}
+
+.footer-content p {
+    width: 60%;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    color: #cacdd2;
+}
+
+
+/* BARRA DE NAVEGACIÓN*/
+
+.socials {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid white;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.socials a {
+    font-size: 1.1rem;
+    width: 20%;
+    transition: color .4s ease;
+}
+
+.socials li:not(:last-child) {
+    border-right: 1px solid white;
+    padding-right: 10%;
+}
+
+.socials a:hover {
+    color: rgb(44, 193, 219);
+}
+
+
+/*------------------------------------------------------------------------------------------------------FIN DE FOOTER*/
+
+
+/*------------------------------------------------------------------------------------------------------INICIO DE @MEDIA QUERIES - 900PX*/
+
+@media (max-width: 900px) {
+    /*-----------------NAVBAR - MAIN ---------------*/
+    .logo img {
+        width: 100px;
+        margin-left: 0px;
+    }
+    .menu ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-right: 3px;
+    }
+    .menu ul li:not(:last-child) {
+        margin-right: 7px;
+    }
+    .menu ul li a {
+        color: white;
+        font-size: 10px;
+    }
+    .menu #sesion {
+        background-color: rgb(44, 193, 219);
+        padding: 7px 5px 10px 5px;
+        border-radius: 10px;
+        font-size: 10px;
+    }
+}
+
+
+/*------------------------------------------------------------------------------------------------------FIN DE @MEDIA QUERIES - 900PX*/
+
+
+/*------------------------------------------------------------------------------------------------------INICIO DE @MEDIA QUERIES - 500PX*/
+
+@media (max-width:500px) {
+    .footer-menu ul {
+        display: flex;
+        margin-top: 10px;
+    }
+    /*-----------------TITULO - MAIN ---------------*/
+    .cont-video video {
+        width: 100%;
+        background-size: cover;
+    }
+    .main {
+        flex-direction: column;
+    }
+    .tl-main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin: 0;
+        padding: 0;
+    }
+    .tl-main h1 {
+        font-size: 20px;
+        padding: 0;
+    }
+    #tl-principal {
+        margin-top: 10px;
+        padding: 0;
+        font-size: 30px;
+    }
+    /*-----------------FORMULARIO - MAIN ---------------*/
+    .cont-form {
+        margin-top: 0;
+        width: 100%;
+    }
+    #formulario {
+        width: 95%;
+        margin-bottom: 50px;
+    }
+    /*-------------SUSCRIPCIÓN------------------*/
+    .tl-sus {
+        font-size: 70px;
+    }
+    .suscripcion p {
+        font-size: 20px;
+    }
+    .mail-sus {
+        width: 85%;
+        font-size: 20px;
+    }
+    .btn-sus {
+        width: 50%;
+    }
+}
+
+
+/*------------------------------------------------------------------------------------------------------FIN DE @MEDIA QUERIES - 500PX*/

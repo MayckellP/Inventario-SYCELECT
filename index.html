@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYCELECT | Inventario</title>
+    <link rel="icon" href="Icon/Logo Solo sf.ico">
+    <link rel="stylesheet" href="Estilos/Style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=David+Libre&family=Doppio+One&family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Inicio de Header -->
+    <header class="inicio">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgba(0, 0, 0, 0.219);">
+            <div class="container-fluid">
+                <div class="logo">
+                    <img src="Icon/Logo Solo sf.ico">
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#" style="background-color: rgba(25, 204, 235, 0.4); border-radius: 10px; text-align: center;">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Categorías
+                    </a>
+                            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink" style="background-color: rgb(0, 0, 0);">
+                                <li><a class="dropdown-item" href="#">Alarma de Seguridad</a></li>
+                                <li><a class="dropdown-item" href="#">Cámaras de Seguridad</a></li>
+                                <li><a class="dropdown-item" href="#">Control de Accesos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- PANEL DE INVENTARIO -->
+        <div class="general">
+            <div class="ingreso">
+                <!-- TITULO -->
+                <div class="titulo-principal">
+                    <div class="titulo">
+                        <h1><i> INVENTARIO 2022 - 2023 </i></h1>
+                    </div>
+                    <div class="tl-logo">
+                        <img src="Images/Logo-banner.jpg" alt="Logo de titulo">
+                    </div>
+                </div>
+                <!-- INGRESO DE DATOS AL INVENTARIO  -->
+                <div class="ingreso-datos">
+                    <form action="" class="formulario">
+                        <table class="tbl-form">
+                            <tr>
+                                <td class="nombre-form"><label for="fm-producto">PRODUCTO:</label></td>
+                                <td class="campo-form"><input id="fm-producto" type="text"></td>
+                            </tr>
+                            <tr>
+                                <td class="nombre-form"><label for="fm-serial">S/N PRODUCTO:</label></td>
+                                <td class="campo-form"><input id="fm-serial" type="text"></td>
+                            </tr>
+                        </table>
+                        <!-- ESPECIFICACIONES PARTICULARES  -->
+                        <div class="parametros">
+                            <div class="especificaciones">
+                                <table class="tbl-form-especif">
+                                    <tr>
+                                        <td class="nombre-form-especif"><label for="pr-color">COLOR:</label></td>
+                                        <td class="campo-form-especif"><input id="pr-color" type="color"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="nombre-form-especif"><label for="pr-tamaño">TAMAÑO:</label></td>
+                                        <td class="campo-form-especif"><input id="pr-tamaño" type="number"> <label for="pr-tamaño"> Cm.</label></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="nombre-form-especif"><label for="pr-bio">BIODEGRADABLE:</label></td>
+                                        <td class="campo-form-especif">
+                                            <label for="pr-bio-si">SI</label>
+                                            <input id="pr-bio-si" type="checkbox">
+                                            <label for="pr-bio-no">NO</label>
+                                            <input id="pr-bio-no" type="checkbox">
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="imagen">
+                                <!--<img src="Images/Logo Solo sf.png" alt="Imagen de referencia">-->
+                                <table class="tbl-form-especif-img">
+                                    <tr>
+                                        <td class="campo-form-especif-img"><input id="pr-img" type="image"></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="nombre-form-especif-img"><label for="pr-img">ADJUNTAR IMAGEN:</label></td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="tbl-form2-cont">
+                            <table class="tbl-form2">
+                                <tr>
+                                    <td class="nombre-form2"><label for="fm-mail">CORREO DE INGRESO:</label></td>
+                                    <td class="campo-form2"><input id="fm-mail" type="mail"></td>
+                                </tr>
+                                <tr>
+                                    <td class="nombre-form2"><label for="fm-fecha">FECHA DE INGRESO:</label></td>
+                                    <td class="campo-form2"><input id="fm-fecha" type="datetime-local"></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="tbl-foot">
+                            <div class="proveedor">
+                                <table class="tbl-footer">
+                                    <tr>
+                                        <td class="nombre-form-prov"><label for="fm-proveedor">PROVEEDOR:</label></td>
+                                        <td class="campo-form-prov"><input id="fm-proveedor" type="text"></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="btn-form">
+                                <input type="button" id="fm-btn" value="Enviar">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- MOSTRADOR DE DATOS DE INVENTARIO -->
+            <div class="mostrador">
+                <form action="" class="formulario">
+                    <table>
+                        <tr>
+                            <td class="nombre-form"><label for="fm-producto">PRODUCTO:</label></td>
+                            <td><input id="fm-producto" type="text"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="fm-serial">S/N PRODUCTO:</label></td>
+                            <td><input id="fm-serial" type="text"></td>
+                        </tr>
+                    </table>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Inicio de Footer -->
+        <footer class="foot">
+            <div class="footer-content">
+                <div class="logo-foot">
+                    <img src="Images/logo-banner-sf.png" class="banner-foot">
+                </div>
+                <p>U Camper developer | Mayckell Pérez </p>
+            </div>
+            <ul class="socials">
+                <li><a href="">Home</a></li>
+                <li><a href="">Sobre nosotros</a></li>
+                <li><a href="">Categorías</a></li>
+                <li><a href="">Iniciar sesión</a></li>
+            </ul>
+        </footer>
+        <!-- Fin de Footer -->
+
+        <!-- Enlace de JavaScript-->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
