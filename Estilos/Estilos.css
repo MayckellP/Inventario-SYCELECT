@@ -1,0 +1,89 @@
+body {
+    background-color: aquamarine;
+}
+
+header {
+    background-color: brown;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+}
+
+.seccion-estilo {
+    background-color: coral;
+    font-size: 30px;
+}
+
+#main {
+    display: flex;
+    width: 100%;
+    background-color: beige;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+
+#formulario {
+    background-color: cadetblue;
+    padding: 5px;
+    border-radius: 5px;
+    width: 45%;
+}
+
+#producto,
+#serie,
+#color,
+#mail,
+#fecha {
+    margin: 5px;
+    width: 50%;
+}
+
+#btn-form {
+    width: 100%;
+    border-radius: 10px;
+    border: 0;
+    height: 25px;
+    margin-top: 10px;
+}
+
+#mostrador {
+    background-color: cadetblue;
+    padding: 5px;
+    border-radius: 5px;
+    width: 45%;
+    overflow: scroll;
+    height: 35vh;
+}
+
+#tabla {
+    background-color: antiquewhite;
+    width: 100%;
+}
+
+#tabla td {
+    padding: 2px;
+    /*border: 1px solid black;*/
+}
+
+#cont-imagen {
+    width: 50%;
+}
+
+#img-prueba {
+    width: 100%;
+}
+
+.nombreProducto {
+    text-align: center;
+    font-size: 25px;
+    border-bottom: 1px solid black;
+}
+
+.nombreMail,
+.nombreFile {
+    text-align: center;
+}
+
+#tabla tr .nombreColor {
+    border: 1px solid;
+}

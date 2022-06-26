@@ -17,13 +17,21 @@ body {
 
 .inicio {
     height: 100%;
-    position: relative;
+    background-image: url("https://cdn.euroinnova.edu.es/img/subidasEditor/almacen01-1635977695.webp");
+    background-position: center;
+    width: 100wh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.malla {
+    background-color: rgba(0, 0, 0, 0.166);
 }
 
 .caja-top {
     border-bottom: 1px solid rgba(255, 255, 255, 0.329);
-    box-shadow: 0 0 8px rgb(255, 255, 255);
-    background-color: rgba(83, 90, 91, 0.008);
+    box-shadow: 0 0 8px rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.889);
 }
 
 .contenedor {
@@ -38,7 +46,7 @@ body {
 }
 
 .logo img {
-    width: 110px;
+    width: 80px;
 }
 
 .menu ul {
@@ -78,18 +86,6 @@ body {
     text-decoration: none;
 }
 
-.cont-video video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-}
-
 
 /*------------------------------------------------------------------------------------------------------FIN DE HEADER - NAVEGADOR*/
 
@@ -97,7 +93,7 @@ body {
 /*------------------------------------------------------------------------------------------------------INICIO DE GENERAL*/
 
 .general {
-    background-color: cadetblue;
+    background-color: rgba(95, 158, 160, 0);
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -105,24 +101,26 @@ body {
 }
 
 .ingreso {
-    background-color: burlywood;
+    background-color: rgba(222, 184, 135, 0);
     width: 59%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .mostrador {
-    background-color: aqua;
+    background-color: rgba(0, 191, 255, 0.321);
     width: 39%;
     margin-top: 10px;
     margin-bottom: 10px;
+    border: 1px solid rgb(32, 0, 108);
+    border-radius: 10px;
 }
 
 
 /*------------------------------------------------------------------------------------------------------FIN DE GENERAL*/
 
 
-/*------------------------------------------------------------------------------------------------------INICIO DE INGRSO DE FORMULARIO*/
+/*------------------------------------------------------------------------------------------------------INICIO DE INGRESO DE FORMULARIO*/
 
 
 /*----------------------------------TITULO PRINCIPAL*/
@@ -131,14 +129,14 @@ body {
     background-color: rgba(255, 228, 196, 0);
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
 }
 
 .titulo {
     background-color: rgba(0, 255, 255, 0);
-    width: 59%;
+    width: 60%;
     margin: auto;
-    text-align: center;
+    text-align: end;
+    color: black;
 }
 
 h1 {
@@ -147,31 +145,32 @@ h1 {
 
 .tl-logo {
     background-color: rgba(137, 43, 226, 0);
-    width: 39%;
+    width: 40%;
     text-align: center;
     margin: auto;
 }
 
 .tl-logo img {
-    width: 75%;
+    width: 20%;
 }
 
 
 /*----------------------------------TITULO PRINCIPAL*/
 
 .ingreso-datos {
-    background-color: rgba(127, 255, 212, 0);
+    background-color: rgba(255, 255, 255, 0.768);
     margin: 5px;
     padding: 5px;
     width: 100%;
+    border-radius: 10px;
 }
 
 .formulario {
-    background-color: rgba(158, 174, 176, 0.567);
+    background-color: rgba(158, 174, 176, 0);
     width: 98%;
     margin: auto;
     border-radius: 10px;
-    padding: 5px;
+    padding: 20px;
 }
 
 .tbl-form {
@@ -199,20 +198,20 @@ h1 {
     width: 80%;
 }
 
-.tbl-form2-cont {
+.tbl-form-cont {
     background-color: #7a7f8500;
     width: 100%;
 }
 
-.nombre-form2 {
-    width: 25%;
+.nombre-form-cont {
+    width: 30%;
     text-decoration: solid;
     padding-left: 10px;
     padding-bottom: 5px;
 }
 
-.campo-form2 {
-    width: 75%;
+.campo-form-cont {
+    width: 100%;
     padding-bottom: 5px;
 }
 
@@ -229,10 +228,11 @@ h1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 5px;
+    border-top: 1px solid black;
 }
 
 .proveedor {
-    background-color: rgba(255, 127, 80, 0);
     width: 70%;
 }
 
@@ -284,7 +284,8 @@ h1 {
 }
 
 .especificaciones {
-    background-color: rgba(222, 184, 135, 0);
+    background-color: #5682ca;
+    padding: 5px;
     width: 59%;
     box-shadow: 0 0 8px rgb(0, 0, 0);
 }
@@ -292,10 +293,11 @@ h1 {
 .imagen {
     background-color: rgba(0, 255, 255, 0);
     width: 40%;
+    border: 1px solid black;
+    border-radius: 10px;
 }
 
 .tbl-form-especif {
-    background-color: #5682ca;
     width: 100%;
 }
 
@@ -323,8 +325,9 @@ h1 {
 }
 
 .campo-form-especif-img {
-    background-color: rgba(250, 235, 215, 0);
+    background-color: rgba(250, 235, 215, 0.685);
     width: 60%;
+    text-align: center;
 }
 
 .nombre-form-especif-img {
@@ -338,13 +341,77 @@ h1 {
 }
 
 
-/*------------------------------------------------------------------------------------------------------FIN DE INGRSO DE FORMULARIO*/
+/*------------------------------------------------------------------------------------------------------FIN DE INGRESO DE FORMULARIO*/
 
 
-/*------------------------------------------------------------------------------------------------------INICIO DE ADICIONAL - PROVEEDORES*/
+/*------------------------------------------------------------------------------------------------------INICIO DE MOSTRADOR DE FORMULARIO*/
+
+
+/*----------------------------------TITULO PRINCIPAL*/
+
+.form-header {
+    width: 100%;
+    background-color: rgba(136, 140, 139, 0.718);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.tl-inv {
+    width: 70%;
+    text-align: center;
+    color: black;
+}
+
+.btn-editar {
+    width: 10%;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 2px;
+    margin: 2px;
+    border: 0;
+}
+
+.btn-editar img {
+    width: 70%;
+}
+
+.btn-eliminar {
+    width: 10%;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 2px;
+    margin: 2px;
+    border: 0;
+}
+
+.btn-eliminar img {
+    width: 50%;
+}
 
 
 /*------------------------------------------------------------------------------------------------------FIN DE ADICIONAL - PROVEEDORES*/
+
+#rack {
+    background-color: cornflowerblue;
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#rack tr td {
+    border: 1px solid;
+    padding: 5px;
+}
+
+.botones-rack {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contRack {
+    overflow: scroll;
+    height: 60vh;
+}
 
 
 /*------------------------------------------------------------------------------------------------------INICIO DE ADICIONAL2 - SUSCRIPCIÓN*/
@@ -377,7 +444,7 @@ h1 {
 }
 
 .logo-foot {
-    width: 30%;
+    width: 20%;
     margin: 5px 0px 5px 20px;
 }
 
@@ -415,7 +482,7 @@ h1 {
 }
 
 .socials a {
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     width: 20%;
     transition: color .4s ease;
 }
