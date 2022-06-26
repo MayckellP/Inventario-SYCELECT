@@ -1,3 +1,3 @@
 # SYCELECT
-Landing Page | SYCELECT - Empresa dedicada a la instalación de la seguridad electrónica residencial, comercial e industrial.
-[Descripción](https://mayckellp.github.io/SYCELECT/)
+CRUD Page | SYCELECT - Inventario con opción de Agregar,  Editar, Eliminar y Mostrado automático. 
+[Descripción](https://mayckellp.github.io/Inventario-SYCELECT/)
