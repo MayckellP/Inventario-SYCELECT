@@ -1,3 +1,4 @@
+// Ingreso de elementos del HTML
 const formulario = document.getElementById("formulario");
 const producto = document.getElementById("fm-producto");
 const serial = document.getElementById("fm-serial");
@@ -10,7 +11,7 @@ const fecha = document.getElementById("fm-fecha");
 const proveedor = document.getElementById("fm-proveedor");
 let inventario = [];
 
-function generarID() {
+function generarID() { // Función para Gnerar un ID aleatorio.
 
     const id = ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
 
@@ -20,7 +21,7 @@ function generarID() {
     return id;
 }
 
-function enviar_a_Inventario() {
+function enviar_a_Inventario() { // Función para enviar la información al LOCALSTORAGE.
     let Producto = {
         id: generarID(),
         nombre: producto.value,
@@ -40,7 +41,7 @@ function enviar_a_Inventario() {
     mostrarProducto();
 }
 
-function mostrarProducto() {
+function mostrarProducto() { // Función para mostrar la información en pantalla.
     const rack = document.getElementById("rack");
     rack.innerHTML = " ";
     let nuevoInventario = JSON.parse(localStorage.getItem("Inventario"));
@@ -88,7 +89,7 @@ window.onload = () => {
         inventario = JSON.parse(localStorage.getItem("Inventario"));
         mostrarProducto();
     }
-    /*function eliminarProducto(id) {
+    /*function eliminarProducto(id) {   //Función para eliminar la información del LOCALSTORAGE Opción 2.
         let inventarioTraido = JSON.parse(localStorage.getItem("Inventario"));
         console.log(inventarioTraido);
         let productosNoEliminados = inventarioTraido.filter(function(objeto) {
@@ -99,7 +100,7 @@ window.onload = () => {
     }*/
 
 
-function eliminarProductoUnico(identificador) {
+function eliminarProductoUnico(identificador) { // Función para eliminar la información del LOCALSTORAGE.
     let nuevoId = identificador;
     let inventarioTraido = JSON.parse(localStorage.getItem("Inventario"));
     for (let i = 0; i < inventarioTraido.length; i++) {
@@ -112,7 +113,7 @@ function eliminarProductoUnico(identificador) {
     mostrarProducto();
 }
 
-function editarProducto(identificador) {
+function editarProducto(identificador) { // Función para Editar la información del LOCALSTORAGE - ESTÁ INCOMPLETA.
     const modalBody = document.querySelector(".modal-body");
     modalBody.innerHTML = "";
     let nuevoID = identificador;
