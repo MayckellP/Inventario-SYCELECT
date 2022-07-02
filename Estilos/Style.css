@@ -1,12 +1,6 @@
-body {
-    margin: auto;
-    position: absolute;
-}
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 
@@ -19,7 +13,7 @@ body {
     height: 100%;
     background-image: url("https://cdn.euroinnova.edu.es/img/subidasEditor/almacen01-1635977695.webp");
     background-position: center;
-    width: 100wh;
+    width: 100vw;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -35,7 +29,7 @@ body {
 }
 
 .contenedor {
-    width: 100%;
+    width: 100vh;
     margin: auto;
 }
 
@@ -557,75 +551,29 @@ body {
         margin-top: 10px;
     }
     /*-----------------TITULO - MAIN ---------------*/
-    .cont-video video {
-        width: 100%;
-        background-size: cover;
-    }
-    .main {
-        flex-direction: column;
-    }
-    .tl-main {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        margin: 0;
-        padding: 0;
-    }
-    .tl-main h1 {
-        font-size: 20px;
-        padding: 0;
-    }
-    #tl-principal {
-        margin-top: 10px;
-        padding: 0;
-        font-size: 30px;
-    }
     /*-----------------FORMULARIO - MAIN ---------------*/
-    .cont-form {
-        margin-top: 0;
-        width: 100%;
-    }
-    #formulario {
-        width: 95%;
-        margin-bottom: 50px;
-    }
     /*-------------SUSCRIPCIÓN------------------*/
-    .tl-sus {
-        font-size: 70px;
-    }
-    .suscripcion p {
-        font-size: 20px;
-    }
-    .mail-sus {
-        width: 85%;
-        font-size: 20px;
-    }
-    .btn-sus {
-        width: 50%;
+    .inicio {
+        width: 100vw;
     }
     .general {
+        width: 100vw;
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
     }
     .ingreso {
-        width: 95%;
-        margin: auto;
+        width: 100%;
         margin-bottom: 20px;
     }
     #formulario {
-        width: 95%;
-        margin: auto;
+        width: 100%;
         font-size: 12px;
     }
     .tbl-ingreso {
-        width: 95%;
-        margin: auto;
+        width: 100%;
     }
     .mostrador {
         width: 100%;
-        margin: auto;
         font-size: 12px;
     }
 }
