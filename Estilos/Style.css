@@ -25,7 +25,7 @@ body {
 }
 
 .malla {
-    background-color: rgba(0, 0, 0, 0.166);
+    background-color: rgba(0, 0, 0, 0.409);
 }
 
 .caja-top {
@@ -46,7 +46,7 @@ body {
 }
 
 .logo img {
-    width: 80px;
+    width: 75px;
 }
 
 .menu ul {
@@ -102,14 +102,14 @@ body {
 
 .ingreso {
     background-color: rgba(222, 184, 135, 0);
-    width: 59%;
+    width: 52%;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 .mostrador {
-    background-color: rgba(0, 191, 255, 0.321);
-    width: 39%;
+    background-color: rgba(255, 255, 255, 0.495);
+    width: 47%;
     margin-top: 10px;
     margin-bottom: 10px;
     border: 1px solid rgb(32, 0, 108);
@@ -125,219 +125,176 @@ body {
 
 /*----------------------------------TITULO PRINCIPAL*/
 
-.titulo-principal {
-    background-color: rgba(255, 228, 196, 0);
-    display: flex;
-    flex-direction: row;
+.tbl-ingreso {
+    background-color: #5682ca;
+    width: 100%;
 }
 
 .titulo {
-    background-color: rgba(0, 255, 255, 0);
-    width: 60%;
-    margin: auto;
-    text-align: end;
-    color: black;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
 }
 
-h1 {
+.tl-texto {
+    width: 70%;
+    text-align: center;
+}
+
+.tl-texto h1 i {
+    color: rgb(0, 0, 0);
     font-size: 35px;
 }
 
 .tl-logo {
-    background-color: rgba(137, 43, 226, 0);
-    width: 40%;
+    width: 30%;
     text-align: center;
-    margin: auto;
 }
 
 .tl-logo img {
-    width: 20%;
+    width: 65px;
+    margin-bottom: 5px;
 }
 
 
 /*----------------------------------TITULO PRINCIPAL*/
 
-.ingreso-datos {
-    background-color: rgba(255, 255, 255, 0.768);
-    margin: 5px;
-    padding: 5px;
-    width: 100%;
-    border-radius: 10px;
-}
-
-.formulario {
+#formulario {
     background-color: rgba(158, 174, 176, 0);
-    width: 98%;
-    margin: auto;
-    border-radius: 10px;
-    padding: 20px;
+    width: 100%;
 }
 
 .tbl-form {
-    background-color: #cacdd200;
+    background-color: #cacdd2;
     width: 100%;
 }
 
 .nombre-form {
-    width: 30%;
-    text-decoration: solid;
-    padding-left: 10px;
-    padding-bottom: 5px;
+    background-color: rgba(0, 255, 255, 0);
+    width: 25%;
+    color: rgb(0, 0, 0);
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 5px;
 }
 
 .campo-form {
-    width: 70%;
-    padding-bottom: 5px;
+    width: 75%;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
-#fm-producto {
-    width: 90%;
-}
-
-#fm-serial {
-    width: 80%;
-}
-
-.tbl-form-cont {
-    background-color: #7a7f8500;
+.campo-id {
     width: 100%;
-}
-
-.nombre-form-cont {
-    width: 30%;
-    text-decoration: solid;
-    padding-left: 10px;
-    padding-bottom: 5px;
-}
-
-.campo-form-cont {
-    width: 100%;
-    padding-bottom: 5px;
-}
-
-#fm-mail {
-    width: 80%;
-}
-
-#fm-fecha {
-    width: 50%;
-}
-
-.tbl-foot {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 5px;
-    border-top: 1px solid black;
-}
-
-.proveedor {
-    width: 70%;
-}
-
-.tbl-footer {
-    width: 100%;
-    background-color: #3167bd00;
-}
-
-.nombre-form-prov {
-    width: 30%;
-    text-decoration: solid;
-    padding-left: 10px;
-    padding-bottom: 5px;
-}
-
-.campo-form-prov {
-    width: 90%;
-    padding-bottom: 5px;
-}
-
-#fm-proveedor {
-    width: 80%;
-}
-
-.btn-form {
-    background-color: rgba(255, 255, 255, 0);
-    width: 30%;
-    margin: auto;
     text-align: center;
 }
 
-#fm-btn {
+#ID {
     width: 90%;
-    height: 33px;
-    border-radius: 10px 1;
+    text-align: center;
+    margin-top: 5px;
+    background-color: darkslategrey;
+    color: white;
+    border-radius: 30px;
+}
+
+#fm-producto,
+#ingresoProducto {
+    width: 90%;
+}
+
+#fm-serial,
+#ingresoSerial {
+    width: 80%;
 }
 
 
 /*----------------------------------DATOS DE ESPECIFICACIONES*/
 
-.parametros {
-    background-color: rgba(255, 127, 80, 0);
-    width: 100%;
-    margin-top: 5px;
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.especif {
+    width: 98%;
+    margin: 7px;
+    padding: 7px;
+    background-color: rgb(15, 63, 100);
+    box-shadow: 0 0 5px rgb(0, 0, 0);
 }
 
-.especificaciones {
-    background-color: #5682ca;
-    padding: 5px;
-    width: 59%;
-    box-shadow: 0 0 8px rgb(0, 0, 0);
-}
-
-.imagen {
-    background-color: rgba(0, 255, 255, 0);
-    width: 40%;
-    border: 1px solid black;
-    border-radius: 10px;
-}
-
-.tbl-form-especif {
+.tbl-especif {
     width: 100%;
 }
 
 .nombre-form-especif {
-    width: 50%;
-    text-decoration: solid;
-    padding-left: 10px;
+    background-color: rgba(0, 255, 255, 0);
+    width: 25%;
+    color: rgb(255, 255, 255);
     padding-bottom: 5px;
+    padding-left: 5px;
 }
 
 .campo-form-especif {
-    width: 50%;
+    width: 37.5%;
     padding-bottom: 5px;
 }
 
 #pr-color,
 #pr-tamaño,
-#pr-bio {
-    width: 80%;
-}
-
-.tbl-form-especif-img {
-    width: 80%;
-    margin: auto;
+#pr-bio,
+#ingresoColor,
+#ingresoTamaño,
+#ingresoBio {
+    width: 90%;
 }
 
 .campo-form-especif-img {
-    background-color: rgba(250, 235, 215, 0.685);
-    width: 60%;
+    background-color: rgba(0, 255, 85, 0);
+    width: 37.5%;
+    padding-bottom: 5px;
     text-align: center;
 }
 
-.nombre-form-especif-img {
-    width: 40%;
-    text-align: center;
+#pr-img,
+#ingresoImg {
+    width: 50%;
+    position: absolute;
+    z-index: -1;
+    visibility: hidden;
+    font-size: 1px;
 }
 
-#pr-img {
+#txt-img {
+    text-align: center;
+    width: 90%;
+}
+
+.archivo-txt {
+    background-color: #c4cedf;
+    padding: 7px;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    width: 100%;
+}
+
+.archivo-txt:hover {
+    background-color: #b7bfcc;
+}
+
+#fm-mail,
+#ingresoMail {
     width: 80%;
-    padding-bottom: 25px;
+}
+
+#fm-proveedor {
+    width: 70%;
+}
+
+#fm-fecha,
+#ingresoFecha,
+#ingresoProveedor {
+    width: 50%;
+}
+
+.btn-form {
+    padding: 5px;
+    text-align: center;
 }
 
 
@@ -351,47 +308,58 @@ h1 {
 
 .form-header {
     width: 100%;
-    background-color: rgba(136, 140, 139, 0.718);
+    background-color: rgba(251, 251, 251, 0.718);
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .tl-inv {
-    width: 70%;
+    width: 100%;
     text-align: center;
     color: black;
 }
 
-.btn-editar {
-    width: 10%;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 2px;
-    margin: 2px;
-    border: 0;
+.buscador {
+    width: 100%;
+    display: flex;
+    border-bottom: 1px solid black;
 }
 
-.btn-editar img {
+.buscar {
+    width: 70%;
+    border-right: 1px solid black;
+}
+
+.buscar label {
+    font-size: 20px;
+    width: 20%;
+}
+
+#most-buscador {
+    margin: 5px;
     width: 70%;
 }
 
-.btn-eliminar {
-    width: 10%;
-    background-color: rgba(255, 255, 255, 0);
-    padding: 2px;
-    margin: 2px;
-    border: 0;
+.contar {
+    width: 30%;
+    text-align: center;
 }
 
-.btn-eliminar img {
-    width: 50%;
+#txt-ingreso {
+    font-size: 15px;
+}
+
+#total-ingresados {
+    width: 10%;
+    background-color: rgba(255, 255, 255, 0);
+    border: 0;
 }
 
 
 /*------------------------------------------------------------------------------------------------------FIN DE ADICIONAL - PROVEEDORES*/
 
 #rack {
-    background-color: cornflowerblue;
+    background-color: rgba(255, 255, 255, 0.797);
     width: 100%;
     display: flex;
     flex-direction: column-reverse;
@@ -405,12 +373,59 @@ h1 {
 .botones-rack {
     width: 100%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+}
+
+.btn-btn-editar {
+    width: 30%;
+    height: 30px;
+}
+
+.btn-editar {
+    width: 15%;
+    padding: 2px;
+    margin: 2px;
+    border: 0;
+    display: flex;
+    color: green;
+}
+
+.btn-editar:hover {
+    width: 18%;
+}
+
+.btn-editar img {
+    width: 100%;
+    margin: auto;
+}
+
+.btn-btn-eliminar {
+    width: 25%;
+    height: 30px;
+}
+
+.btn-eliminar {
+    width: 22%;
+    padding: 2px;
+    margin: 2px;
+    border: 0;
+    color: red;
+    display: flex;
+}
+
+.btn-eliminar:hover {
+    width: 25%;
+}
+
+.btn-eliminar img {
+    width: 60%;
+    margin: auto;
 }
 
 .contRack {
     overflow: scroll;
-    height: 60vh;
+    height: 53vh;
 }
 
 
@@ -444,7 +459,7 @@ h1 {
 }
 
 .logo-foot {
-    width: 20%;
+    width: 10%;
     margin: 5px 0px 5px 20px;
 }
 
@@ -472,8 +487,8 @@ h1 {
     list-style: none;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 10px;
-    padding-top: 10px;
+    margin-bottom: 5px;
+    padding-top: 5px;
 }
 
 .socials a {
@@ -489,7 +504,7 @@ h1 {
 
 .socials li:not(:last-child) {
     border-right: 1px solid white;
-    padding-right: 10%;
+    padding-right: 5%;
 }
 
 .socials a:hover {
@@ -536,7 +551,7 @@ h1 {
 
 /*------------------------------------------------------------------------------------------------------INICIO DE @MEDIA QUERIES - 500PX*/
 
-@media (max-width:500px) {
+@media (max-width:700px) {
     .footer-menu ul {
         display: flex;
         margin-top: 10px;
@@ -588,6 +603,30 @@ h1 {
     }
     .btn-sus {
         width: 50%;
+    }
+    .general {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .ingreso {
+        width: 95%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #formulario {
+        width: 95%;
+        margin: auto;
+        font-size: 12px;
+    }
+    .tbl-ingreso {
+        width: 95%;
+        margin: auto;
+    }
+    .mostrador {
+        width: 100%;
+        margin: auto;
+        font-size: 12px;
     }
 }
 

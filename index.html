@@ -56,104 +56,106 @@
             <div class="general">
                 <div class="ingreso">
                     <!-- TITULO -->
-                    <div class="titulo-principal">
-                        <div class="titulo">
-                            <h1><i> INVENTARIO 2022 - 2023 </i></h1>
-                        </div>
-                        <div class="tl-logo">
-                            <img src="Images/inventario-simbolo.png" alt="Logo de titulo">
-                        </div>
-                    </div>
+                    <table class="tbl-ingreso">
+                        <tr class="titulo">
+                            <td class="tl-texto">
+                                <h1><i> INVENTARIO 2022 - 2023 </i></h1>
+                            </td>
+                            <td class="tl-logo">
+                                <img src="Images/inventario-simbolo.png" alt="Logo de titulo">
+                            </td>
+                        </tr>
+                    </table>
                     <!-- INGRESO DE DATOS AL INVENTARIO  -->
-                    <div class="ingreso-datos">
-                        <form class="formulario">
-                            <table class="tbl-form">
-                                <tr>
-                                    <td class="nombre-form"><label for="fm-producto">PRODUCTO:</label></td>
-                                    <td class="campo-form"><input id="fm-producto" type="text"></td>
-                                </tr>
-                                <tr>
-                                    <td class="nombre-form"><label for="fm-serial">S/N PRODUCTO:</label></td>
-                                    <td class="campo-form"><input id="fm-serial" type="text"></td>
-                                </tr>
-                            </table>
+
+                    <form id="formulario">
+                        <table class="tbl-form">
+                            <tr>
+                                <td class="nombre-form"><label for="fm-producto">PRODUCTO:</label></td>
+                                <td colspan="2" class="campo-form"><input id="fm-producto" type="text" required></td>
+                            </tr>
+                            <tr>
+                                <td class="nombre-form"><label for="fm-serial">S/N PRODUCTO:</label></td>
+                                <td colspan="2" class="campo-form"><input id="fm-serial" type="text" required></td>
+                            </tr>
+
                             <!-- ESPECIFICACIONES PARTICULARES  -->
-                            <div class="parametros">
-                                <div class="especificaciones">
-                                    <table class="tbl-form-especif">
-                                        <tr>
-                                            <td class="nombre-form-especif"><label for="pr-color">COLOR:</label></td>
-                                            <td class="campo-form-especif"><input id="pr-color" type="color"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="nombre-form-especif"><label for="pr-tamaño">TAMAÑO:</label></td>
-                                            <td class="campo-form-especif"><input id="pr-tamaño" type="number"> <label for="pr-tamaño"> Cm.</label></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="nombre-form-especif"><label for="pr-bio">BIODEGRADABLE: </label></td>
-                                            <td class="campo-form-especif">
-                                                <select id="pr-bio">
+                            <tr>
+                                <td colspan="3">
+                                    <div class="especif">
+                                        <table class="tbl-especif">
+                                            <tr>
+                                                <td class="nombre-form-especif"><label for="pr-color">COLOR:</label></td>
+                                                <td class="campo-form-especif"><input id="pr-color" type="color" required></td>
+                                                <td rowspan="3" class="campo-form-especif-img"><input required id="pr-img" type="file" contextmenu=" ">
+                                                    <label id="txt-img" for="pr-img"><div class="archivo-txt">Adjuntar Archivo de referencia</div></label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="nombre-form-especif"><label for="pr-tamaño">TAMAÑO (cm):</label></td>
+                                                <td class="campo-form-especif"><input required id="pr-tamaño" type="number" value="0">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="nombre-form-especif"><label for="pr-bio">BIODEGRADABLE: </label></td>
+                                                <td class="campo-form-especif">
+                                                    <select id="pr-bio">
                                                     <option disabled>Seleccione:</option>
-                                                    <option value="si">Sí</option>
-                                                    <option value="no" >No</option>
-                                                    <option disabled selected></option>
+                                                    <option value="Sí">Sí</option>
+                                                    <option value="No" >No</option>
+                                                    <option value="Sin Especificar" selected>Sin Especificar</option>
                                                 </select>
-                                            </td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="imagen">
-                                    <!--<img src="Images/Logo Solo sf.png" alt="Imagen de referencia">-->
-                                    <table class="tbl-form-especif-img">
-                                        <tr>
-                                            <td class="campo-form-especif-img"><input id="pr-img" type="file"></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="nombre-form-especif-img"><label for="pr-img">ADJUNTAR ARCHIVO:</label></td>
-                                        </tr>
-                                    </table>
-                                </div>
-                            </div>
-                            <div class="tbl-form-cont">
-                                <table class="tbl-form">
-                                    <tr>
-                                        <td class="nombre-form-cont"><label for="fm-mail">CORREO DE INGRESO:</label></td>
-                                        <td class="campo-form-cont"><input id="fm-mail" type="mail"></td>
-                                    </tr>
-                                    <tr>
-                                        <td class="nombre-form-cont"><label for="fm-fecha">FECHA DE INGRESO:</label></td>
-                                        <td class="campo-form-cont"><input id="fm-fecha" type="datetime-local"></td>
-                                    </tr>
-                                </table>
-                            </div>
-                            <div class="tbl-foot">
-                                <div class="proveedor">
-                                    <table class="tbl-footer">
-                                        <tr>
-                                            <td class="nombre-form-prov"><label for="fm-proveedor">PROVEEDOR:</label></td>
-                                            <td class="campo-form-prov"><input id="fm-proveedor" type="text"></td>
-                                        </tr>
-                                    </table>
-                                </div>
-                                <div class="btn-form">
-                                    <button id="fm-btn" type="button" onclick="enviar_a_Inventario()">Enviar</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <!--<img src="Images/Logo Solo sf.png" alt="Imagen de referencia">-->
+
+
+                            <tr>
+                                <td class="nombre-form"><label for="fm-mail">CORREO DE INGRESO:</label></td>
+                                <td colspan="2" class="campo-form"><input type="email" id="fm-mail"></td>
+                            </tr>
+                            <tr>
+                                <td class="nombre-form"><label for="fm-proveedor">PROVEEDOR:</label></td>
+                                <td colspan="2" class="campo-form"><input id="fm-proveedor" type="text" required></td>
+                            </tr>
+                            <tr>
+                                <td class="nombre-form"><label for="fm-fecha">FECHA DE INGRESO:</label></td>
+                                <td colspan="2" class="campo-form"><input id="fm-fecha" type="datetime-local" required></td>
+                            </tr>
+                            <tr>
+                                <td colspan="3" class="btn-form">
+                                    <button type="button" class="btn btn-success" onclick="enviar_a_Inventario()">Enviar Información</button>
+                                </td>
+                            </tr>
+
+                        </table>
+                    </form>
                 </div>
 
                 <!-- MOSTRADOR DE DATOS DE INVENTARIO -->
                 <div class="mostrador">
                     <div class="form-header">
                         <h2 class="tl-inv">Inventario Ingresado</h2>
-
+                        <div class="buscador">
+                            <div class="buscar">
+                                <label for="most-buscador">Buscar: </label>
+                                <input type="search" id="most-buscador">
+                            </div>
+                            <div class="contar">
+                                <label id="txt-ingreso">Total Ingresados: </label>
+                                <input type="text" id="total-ingresados" readonly>
+                            </div>
+                        </div>
                     </div>
-                    <label for="most-buscador">Buscar: </label>
-                    <input type="search" id="most-buscador">
+
                     <div class="contRack">
                         <table id="rack">
-
+                            <!--INGRESO DE DATOS MEDIANTE JAVASCRIPT-->
                         </table>
                     </div>
                 </div>
@@ -192,15 +194,82 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
+                    <!--iNICIO DE MODAL-->
+                    <div class="ingreso-datos">
+                        <form class="ingresoFormulario">
+                            <table class="tbl-form">
+                                <tr>
+                                    <td class="campo-id" colspan="3"><input id="ID" type="text" readonly></td>
+                                </tr>
+                                <tr>
+                                    <td class="nombre-form"><label for="ingresoProducto">PRODUCTO:</label></td>
+                                    <td colspan="2" class="campo-form"><input id="ingresoProducto" type="text" autofocus></td>
+                                </tr>
+                                <tr>
+                                    <td class="nombre-form"><label for="ingresoSerial">S/N PRODUCTO:</label></td>
+                                    <td colspan="2" class="campo-form"><input id="ingresoSerial" type="text"></td>
+                                </tr>
 
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                    <button type="button" class="btn btn-primary" onclick="editarProducto()">Guardar Nueva Información</button>
+                                <!-- ESPECIFICACIONES PARTICULARES  -->
+                                <tr>
+                                    <td colspan="3">
+                                        <div class="especif">
+                                            <table class="tbl-especif">
+                                                <tr>
+                                                    <td class="nombre-form-especif"><label for="ingresoColor">COLOR:</label></td>
+                                                    <td class="campo-form-especif"><input id="ingresoColor" type="color"></td>
+                                                    <td rowspan="3" class="campo-form-especif-img"><input id="ingresoImg" type="file">
+                                                        <label id="txt-img" for="ingresoImg"><div class="archivo-txt">Cambiar Archivo de referencia</div></label>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="nombre-form-especif"><label for="ingresoTamaño">TAMAÑO (cm):</label></td>
+                                                    <td class="campo-form-especif"><input id="ingresoTamaño" type="number" value="0">
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="nombre-form-especif"><label for="ingresoBio">BIODEGRADABLE: </label></td>
+                                                    <td class="campo-form-especif">
+                                                        <select id="ingresoBio">
+                                                        <option disabled>Seleccione:</option>
+                                                        <option value="Sí">Sí</option>
+                                                        <option value="No" >No</option>
+                                                        <option value="Sin Especificar" selected >Sin Especificar</option>
+                                                    </select>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                    <td class="nombre-form"><label for="ingresoMail">CORREO DE INGRESO:</label></td>
+                                    <td colspan="2" class="campo-form"><input id="ingresoMail" type="email"></td>
+                                </tr>
+                                <tr>
+                                    <td class="nombre-form"><label for="ingresoProveedor">PROVEEDOR:</label></td>
+                                    <td colspan="2" class="campo-form"><input id="ingresoProveedor" type="text"></td>
+                                </tr>
+                                <tr>
+                                    <td class="nombre-form"><label for="ingresoFecha">FECHA DE INGRESO:</label></td>
+                                    <td colspan="2" class="campo-form"><input id="ingresoFecha" type="datetime-local"></td>
+                                </tr>
+                            </table>
+                        </form>
+                        <!--FIN DEL MODAL-->
+                    </div>
+                    <div class="modal-footer" style="justify-content: space-evenly;">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal" onclick="guardarProductoEditado()">Guardar Nueva Información</button>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
-    <script src="Estilos/main.js"></script>
+
+
+
+        <!--iNICIO DE SCRIPT JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js " integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2 " crossorigin="anonymous "></script>
+        <script src="Estilos/main.js"></script>
 </body>
