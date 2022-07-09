@@ -13,7 +13,7 @@
     height: 100%;
     background-image: url("https://cdn.euroinnova.edu.es/img/subidasEditor/almacen01-1635977695.webp");
     background-position: center;
-    width: 100vw;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -92,6 +92,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-top: 30px;
+    padding-bottom: 40px;
 }
 
 .ingreso {
@@ -247,11 +249,11 @@
 
 #pr-img,
 #ingresoImg {
-    width: 50%;
+    width: 1%;
     position: absolute;
     z-index: -1;
     visibility: hidden;
-    font-size: 1px;
+    font-size: 10px;
 }
 
 #txt-img {
@@ -305,6 +307,7 @@
     background-color: rgba(251, 251, 251, 0.718);
     display: flex;
     flex-direction: column;
+    border-radius: 10px;
 }
 
 .tl-inv {
@@ -419,7 +422,16 @@
 
 .contRack {
     overflow: scroll;
-    height: 53vh;
+    height: 50vh;
+}
+
+.mostrador {
+    background-color: rgba(255, 255, 255, 0.495);
+    width: 47%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(32, 0, 108);
+    border-radius: 10px;
 }
 
 
@@ -511,6 +523,13 @@
 
 /*------------------------------------------------------------------------------------------------------INICIO DE @MEDIA QUERIES - 900PX*/
 
+@media(max-width: 1168px) {
+    .contRack {
+        overflow: scroll;
+        height: 60vh;
+    }
+}
+
 @media (max-width: 900px) {
     /*-----------------NAVBAR - MAIN ---------------*/
     .logo img {
@@ -537,15 +556,6 @@
         border-radius: 10px;
         font-size: 10px;
     }
-}
-
-
-/*------------------------------------------------------------------------------------------------------FIN DE @MEDIA QUERIES - 900PX*/
-
-
-/*------------------------------------------------------------------------------------------------------INICIO DE @MEDIA QUERIES - 500PX*/
-
-@media (max-width:700px) {
     .footer-menu ul {
         display: flex;
         margin-top: 10px;
@@ -553,28 +563,34 @@
     /*-----------------TITULO - MAIN ---------------*/
     /*-----------------FORMULARIO - MAIN ---------------*/
     /*-------------SUSCRIPCIÓN------------------*/
-    .inicio {
-        width: 100%;
-    }
     .general {
-        width: 100vw;
+        width: 100%;
         display: flex;
         flex-direction: column;
     }
     .ingreso {
-        width: 100%;
+        width: 95%;
+        margin: auto;
+        padding: 0;
         margin-bottom: 20px;
     }
-    #formulario {
-        width: 100%;
-        font-size: 12px;
-    }
-    .tbl-ingreso {
-        width: 100%;
-    }
     .mostrador {
-        width: 100%;
+        width: 95%;
+        margin: auto;
         font-size: 12px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+    .form-header {
+        border-radius: 10px;
+    }
+    #rack {
+        width: 100%;
+        overflow: scroll;
+    }
+    .contRack {
+        overflow: scroll;
+        height: 35vh;
     }
 }
 
